@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Tip - calculator</title>
   <!-- ======================================= -->
   <!-- =====         GOOGLE FONTS         ==== -->
   <!-- ======================================= -->
@@ -35,20 +35,24 @@
           <!-- = 1 = -->
           <div id="selector-wrp">
             <label for="bill">Bill</label>
-            <input class="inputt" id="bill" type="text">
+            <input class="inputt" id="bill" type="text" required>
 
             <div id="tips-title" >Select Tip %</div>
             <div class="select-tips">
-              <button class="btn-tips">5%</button>
-              <button class="btn-tips">10%</button>
-              <button class="btn-tips">15%</button>
-              <button class="btn-tips">25%</button>
-              <button class="btn-tips">50%</button>
+              <button type="submit" class="btn-tips">5%</button>
+              <button type="submit" class="btn-tips">10%</button>
+              <button type="submit" class="btn-tips">15%</button>
+              <button type="submit" class="btn-tips">25%</button>
+              <button type="submit" class="btn-tips">50%</button>
               <input class="input-custom" type="text" placeholder="Custom">
             </div>
 
-            <label for="n-of-p">Number of People</label>
-            <input class="inputt" id="n-of-p" type="text">
+            <label for="n-of-p">Number of People <span class="error">can't be zero</span></label>
+
+              <input class="inputt" id="n-of-p" type="text" required>
+
+
+
           </div>
           <!-- = 2 = -->
           <div id="value-wrp">
@@ -59,7 +63,7 @@
                   <span class="per">/ person</span>
                 </div>
 
-                <p>$0.00</p>
+                <p id="per-one">$0.00</p>
               </div>
 
               <div class="total">
@@ -68,7 +72,7 @@
                   <span class="per">/ person</span>
                 </div>
 
-                <p>$0.00</p>
+                <p id="total-one">$0.00</p>
               </div>
               <button class="btn btn-reset">reset</button>
             </div>
