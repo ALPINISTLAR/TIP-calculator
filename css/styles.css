@@ -66,13 +66,12 @@ select:-webkit-autofill:focus {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  border: 3px solid red;
 }
 
 /* ** MAIN CONTENT ** */
 .main-content
 {
-  padding-top: 160px;
+  padding-top: 80px;
   flex-grow: 1;
 }
 
@@ -82,28 +81,105 @@ select:-webkit-autofill:focus {
   align-items: center;
 }
 .logo {
-  margin-bottom: 85px;
+  display: block;
+  margin-bottom: 50px;
+  cursor: pointer;
 }
 .logo__img {
+
 }
 .content {
   display: flex;
   width: 920px;
-  /* height: 480px; */
-
   border-radius: 25px;
   background-color: #FFF;
   box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
 }
 
 #selector-wrp{
-  border: 3px solid gold;
-  margin-right: auto;
+  padding: 45px 48px 48px;
+  display: flex;
+  flex-direction: column;
 }
+#selector-wrp label{
+  color: #5E7A7D;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.inputt{
+  color: #00474B;
+text-align: right;
+font-family: Space Mono;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 6px 17px;
+border: none;
+border-radius: 5px;
+background: #F3F9FA;
+}
+.select-tips {
+display: grid;
+grid-template-columns: 117px 117px 117px;
+column-gap: 14px;
+row-gap: 16px;
+margin-bottom: auto;
+}
+.input-custom{
+  color: #547878;
+text-align: right;
+font-family: Space Mono;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding: 6px 14px;
+border: none;
+border-radius: 5px;
+background: #F3F9FA;
+}
+#bill{
+  margin-bottom: 40px;
+}
+#tips-title{
+  color: #5E7A7D;
+  font-family: Space Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.btn-tips {
+  color: #FFF;
+text-align: center;
+font-family: Space Mono;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-radius: 5px;
+background-color: #00474B;
+border: 0;
+padding: 0;
+padding: 6px 14px 6px 13px;
+cursor: pointer;
+}
+.btn-tips-selected{
+  color: #00474B;
+  background-color: #26C2AE;
+}
+
 #value-wrp{
   padding: 32px;
   padding-left: 0;
-  border: 3px solid black;
 }
 
 .values {

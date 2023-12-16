@@ -31,36 +31,52 @@
         </a>
 
         <!-- content  -->
-<div class="content">
-  <!-- = 1 = -->
-<div id="selector-wrp"></div>
-<!-- = 2 = -->
-<div id="value-wrp">
-  <div class="values">
-<div class="tip-amount">
-  <div>
-    <span class="tip">Tip Amount</span>
-    <span class="per">/ person</span>
-  </div>
+        <div class="content">
+          <!-- = 1 = -->
+          <div id="selector-wrp">
+            <label for="bill">Bill</label>
+            <input class="inputt" id="bill" type="text">
 
-  <p>$0.00</p>
-</div>
+            <div id="tips-title" >Select Tip %</div>
+            <div class="select-tips">
+              <button class="btn-tips">5%</button>
+              <button class="btn-tips">10%</button>
+              <button class="btn-tips">15%</button>
+              <button class="btn-tips">25%</button>
+              <button class="btn-tips">50%</button>
+              <input class="input-custom" type="text" placeholder="Custom">
+            </div>
 
-<div class="total">
-  <div>
-    <span class="tip">Total</span>
-    <span class="per">/ person</span>
-  </div>
+            <label for="n-of-p">Number of People</label>
+            <input class="inputt" id="n-of-p" type="text">
+          </div>
+          <!-- = 2 = -->
+          <div id="value-wrp">
+            <div class="values">
+              <div class="tip-amount">
+                <div>
+                  <span class="tip">Tip Amount</span>
+                  <span class="per">/ person</span>
+                </div>
 
-  <p>$0.00</p>
-</div>
-<button class="btn btn-large">reset</button>
-  </div>
-</div>
-</div>
+                <p>$0.00</p>
+              </div>
+
+              <div class="total">
+                <div>
+                  <span class="tip">Total</span>
+                  <span class="per">/ person</span>
+                </div>
+
+                <p>$0.00</p>
+              </div>
+              <button class="btn btn-large">reset</button>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
-    <script src="js/main.js"></script>
-  </body>
-  </html>
+    </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
